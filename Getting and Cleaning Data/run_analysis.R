@@ -1,6 +1,6 @@
-if (!require("pacman")) {
-    install.packages("pacman")
-}
+options(repos = c(CRAN = "https://cran.r-project.org"))
+install.packages("pacman")
+
 pacman::p_load(data.table, reshape2, gsubfn)
 
 # get data from zip file
